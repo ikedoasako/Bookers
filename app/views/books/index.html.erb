@@ -1,9 +1,10 @@
-<h1>投稿一覧</h1>
+<div class="book-wrap">
 <% @books.each do |book| %>
-
-  <p>タイトル</p>
-  <span>
-    <%= link_to book.title, book_path(book.id) %>
-  </span>
-  
+  <div class="book-box">
+    <div class="book-comment">
+      <span class="book-body"><%= book.body %></span>
+      <span class="book-title"><%=link_to book.title, book_path(book.id) %></span>
+    </div>
+  </div>
 <% end %>
+</div>
