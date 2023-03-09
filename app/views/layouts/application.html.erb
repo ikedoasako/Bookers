@@ -8,6 +8,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
   </head>
 
   <body>
@@ -23,7 +24,7 @@
           <%= link_to "Books", books_path %>
         </li>
         <li class="nav-book-item">
-          <%= link_to "New Book", new_book_path %>
+          <%= link_to "New Book", books_new_path %>
         </li>
       </ul>
     </nav>
